@@ -23,7 +23,7 @@ import static org.jooq.impl.DSL.table;
  * @author DELL
  */
 public class Bookticket extends javax.swing.JInternalFrame {
-
+String flightid;
    
     public Bookticket() {
         initComponents();
@@ -528,7 +528,7 @@ public class Bookticket extends javax.swing.JInternalFrame {
         try{
         int col=0;
         int row=table.getSelectedRow();
-        String flightid=table.getModel().getValueAt(row,col).toString();
+            flightid=table.getModel().getValueAt(row,col).toString();
              Connection con;
             PreparedStatement pre;
             
